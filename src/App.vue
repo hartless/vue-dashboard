@@ -1,14 +1,12 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style lang="scss">
+@import "@/global-styles/colors.scss";
+@import "@/global-styles/typography.scss";
 html,
 body {
   margin: 0;
@@ -20,8 +18,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #ddeedf;
-  background-color: #000;
 }
 a {
   text-decoration: none;
