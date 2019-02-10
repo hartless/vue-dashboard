@@ -9,7 +9,10 @@ import Recover from "./views/SignInFlow/Recover";
 Vue.use(Router);
 
 export default new Router({
-  routes: [{
+  mode: "history",
+  base: process.env.BASE_URL,
+  routes: [
+    {
       path: "/",
       name: "home",
       component: Home
